@@ -19,7 +19,7 @@ menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
 	padding: 0;
-	// border: 0;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
@@ -51,7 +51,7 @@ table {
 /* Set every element's box-sizing to border-box */
 * {
 	box-sizing: border-box;
-	border: 1px solid black;
+	// border: 1px solid black;
 }
 
 html, body {
@@ -74,17 +74,20 @@ body{
 }
 header{
 	background-color: #708090;
-	widows: 35vw;
+	widows: 50vw;
 	display:flex;
 	flex-direction:column;
 	align-items:center;
 	height:100%;
 	justify-content:center;
 	// position:absolute;
+	position:fixed;
+	top:0;
+	left:0;
 
 	img{
 		border-radius: 90%;
-		width:100%;
+		width:75%;
 	} //end of img styling
 
 	h1{
@@ -153,23 +156,30 @@ header{
 	font-family: 'Vidaloka', serif;
 	width:65vw;
 	background-color: #c0c0c0;
-	margin-left: 3%;
+	margin-left: 20%;
+	color:#2f4f4f;
+	position:relative;
+	right:0
 } //end of .onScreenRight
 
 .objective h2{
 	font-size:1.5rem;
+	color:#cd5c5c
 }// end of objective h2
 .objective p{
 	font-size:1.14rem;
+	margin-left:2%;
 }// end of objective p
 
 .sectionTitle{
 	font-size:1.5rem;
+	color:#cd5c5c
 }//end of education h2
 
 .schoolInfo{
 	display:flex;
 	align-items:flex-end;
+	margin-left:2%
 }
 .schoolInfo h3, h4, h5{
 	margin-left:1%;
@@ -185,4 +195,31 @@ header{
 
 .schoolInfo h5{
 	font-size:.9rem;
+}
+
+.jobInfo{
+	display:flex;
+	align-items: flex-end;
+	margin-left:2%;
+
+	h3{
+		font-size:1.14rem;
+	}//h3 end
+
+	h4{
+		font-size:1rem;
+	}//h4 end
+
+	h5{
+		font-size:.9rem;
+	}//h5 end
+}//job info end
+
+ul{
+	margin-left:2%;
+	line-height: normal;
+}
+
+.workHistory p{
+	margin-left:2%;
 }

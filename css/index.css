@@ -85,7 +85,6 @@ audio,
 video {
   margin: 0;
   padding: 0;
-  border: 0;
   font-size: 100%;
   font: inherit;
   vertical-align: baseline;
@@ -141,7 +140,7 @@ body {
 }
 header {
   background-color: #708090;
-  widows: 50vw;
+  width: 30vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -195,9 +194,9 @@ header a {
 }
 .onScreenRight {
   font-family: 'Vidaloka', serif;
-  width: 65vw;
+  width: 70vw;
   background-color: #c0c0c0;
-  margin-left: 20%;
+  margin-left: 35%;
   color: #2f4f4f;
   position: relative;
   right: 0;
@@ -219,7 +218,11 @@ header a {
   align-items: flex-end;
   margin-left: 2%;
 }
-.schoolInfo .schoolInfo h4 {
+.schoolInfo h3 {
+  font-size: 1.14rem;
+  margin-left: 1%;
+}
+.schoolInfo h4 {
   font-size: 1rem;
   margin-left: 1%;
 }
@@ -247,4 +250,40 @@ ul {
 }
 .workHistory p {
   margin-left: 2%;
+}
+@media (max-width: 500px) {
+  body {
+    display: block;
+    margin: 0%;
+  }
+  header {
+    position: static;
+    height: 100%;
+    width: 100%;
+  }
+  img {
+    display: none;
+  }
+  .onScreenRight {
+    margin-left: 0%;
+    width: 100%;
+  }
+  #hp,
+  #davis,
+  #army {
+    margin-left: 2%;
+  }
+  .workHistory p {
+    margin-left: 0%;
+  }
+  .schoolInfo {
+    display: block;
+  }
+  .jobInfo {
+    display: block;
+  }
+  .objective h2,
+  .sectionTitle {
+    margin-left: 15%;
+  }
 }

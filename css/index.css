@@ -202,6 +202,14 @@ header a {
   position: relative;
   right: 0;
 }
+.navBar {
+  display: flex;
+  justify-content: space-between;
+}
+.navBar a {
+  text-decoration: none;
+  color: #2f4f4f;
+}
 .objective h2 {
   font-size: 1.5rem;
   color: #cd5c5c;
